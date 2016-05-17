@@ -21,11 +21,22 @@
     .colTitle{
         font-size: 140% !important;
     }
+    
+    .video-overlay{
+        width: 100% !important; 
+        position: relative;
+        margin: none !important;
+        top: -2px !important;
+        left: -5px !important;
+    }
 }
 
 @media only screen and (max-width: 770px) {
     .video-overlay{
-        display: none;
+        width: 500px;
+        position: relative;
+        left: 20px;
+        margin-top: 20px;;
     }
     
     .navButton:first-child{
@@ -50,6 +61,8 @@
     .goButton button{
         width: 50%;
     }  
+    
+
 }
 
 @media only screen and (max-width: 1000px) {

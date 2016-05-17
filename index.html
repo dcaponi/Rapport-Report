@@ -37,13 +37,12 @@
         <header>
             <h1>Rapport Report</h1>
             <div id="navButtons">
-                <button type="button" class="navButton" id="about">How it Works</button>
+                <button type="button" class="navButton" id="works">How it Works</button>
                 <button type="button" class="navButton" id="goTo">Go to App</button>
                 <button type="button" class="navButton" id="abt">About Us</button>
             </div>
             <p class="clearfix"></p>
         </header>
-        
         <div id="welcome">
             <div class="outer-container">
                 <div class="inner-container">
@@ -58,7 +57,7 @@
                 </div>
             </div>
         </div>
-        
+        <br>
         <section id="aboutSection">
             <h2>How Rapport Report Works</h2>
             <div class="row">
@@ -103,33 +102,32 @@
                 </div>
             </div>
         </section>
-        
+        <br>
         <section id="searchSection">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-sm-7">
                     <h3>Get Started Now</h3>
                     <p>Get a jump on your lead or company research with one click. Find top topics to connect over without crawling through hours of old posts and shares. Find out how much influence a person has on social media with only a Twitter handle.</p>
                 </div>
-                <div class="col-sm-7 searchBar">
+                <div class="col-sm-5 searchBar">
                     <form id="searchForm">
-                        
                         <input type="text" name="searchInput" id="searchInput" placeholder="@exampleSearch">
                         <button type="submit" id="searchButton" class="goButton">Search</button>
                     </form>
                 </div>
             </div>
         </section>
-        
+        <br>
         <section id="appSection">
             <div class="row">
                 <div class="col-sm-4">
                     <div class="col-sm-12 userInfo">
                         <img src="headshotTest.jpg" id="avatar">
-                        <p>Ezio Auditore</p>
-                        <p>@ezioAuditore</p>
+                        <p id="name">Ezio Auditore</p>
+                        <p id="userName">@ezioAuditore</p>
                     </div>
                     <div class="col-sm-12 userTopInfo">
-                        <h3>Klout Score: <span id="bigScore">85</span></h3>
+                        <h3><img src="klout-logo-color-dark.png" class="kloutImg1">&emsp;<span id="bigScore">85</span></h3>
                         <h4>Frequent Topic: <span id="bigTopic">Assasinating</span></h4>
                         <h4>Top Influence: <span id="bigFollow">Leonardo DaVinci</span></h4>
                     </div>
@@ -201,7 +199,13 @@
                     </div>
             </div>
         </section>
-        
+        <br>
+        <footer>
+            <ul>
+                <li><a href="www.dominick-caponi.com" style="color: #fff;"> Engineered by Dominick Caponi</a></li>
+                <li><a href="www.klout.com"><img src="powered-by-klout.png" class="kloutImg"></a></li>
+            </ul>
+        </footer>
         
         
         <script src="JS/app.js"></script>

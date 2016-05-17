@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
     
 //Button Scroll Effects
-    $('#about').on("click", function(event){
+    $('#works').on("click", function(event){
         event.preventDefault();
         $('html, body').animate({
 			scrollTop: ($('#aboutSection').offset().top)

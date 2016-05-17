@@ -100,7 +100,7 @@ header{
     width: 100%;    
     position: fixed;
     z-index: 100;
-    background-color: #36B9FF;
+    background-color: #01b9ff;
     padding: 0px 20px;
 }
 
@@ -123,7 +123,7 @@ header h1{
 
 .navButton{
     margin: 0px 1.em;
-    background-color: #36B9FF;
+    background-color: #01b9ff;
     padding: 10px;
     border: none;
     color: #fff;
@@ -132,7 +132,7 @@ header h1{
 }
 
 .navButton:hover{
-    color: #36B9FF;
+    color: #01b9ff;
     background-color: #f6f6f6;
 }
 /* End Header Bar */
@@ -146,7 +146,7 @@ header h1{
 .video-overlay {
     position: absolute;
     left: 40%;
-    top: 23%;
+    top: 27%;
     padding: 10px;
     font-size: 110%;
     line-height: 24px;
@@ -218,8 +218,8 @@ video {
 /* Data Section */
 
 #avatar{
-    height: 30%;
-    width: 30%;
+    height: 100%;
+    width: 70%;
 }
 
 .userInfo{
@@ -236,7 +236,7 @@ video {
 /* Get Started Section */
 
 #searchSection{
-    background-color: #36b9ff;
+    background-color: #01b9ff;
     color: #f6f6f6;
     padding: 50px 40px;
     margin: 0px;
@@ -244,7 +244,6 @@ video {
 
 #searchForm{
     margin-top: 30px;
-    margin-left: 20px;
     color: #000;
     text-align: center;
 }
@@ -256,8 +255,8 @@ video {
 
 .goButton{
     margin: 20px;
-    width: 40%;
-    background-color: #52d7ff;
+    width: 30%;
+    background-color: #01b9ff;
     padding: 10px;
     border: none;
     color: #f6f6f6;
@@ -267,12 +266,38 @@ video {
 }
 
 .goButton:hover{
-    color: #36B9FF;
+    color: #01b9ff;
     background-color: #f6f6f6;
 }
 
+.searchBar{
+    padding: 0px !important;
+}
 
+/* End Get Started Section */
 
+/* Footer */
+
+footer{
+    background-color: #01b9ff;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+}
+
+footer ul li{
+    list-style-type: none;
+    margin: 20px 0px;
+}
+
+.kloutImg{
+    width: 200px;
+}
+
+.kloutImg1{
+    width: 140px;
+    height: 30px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
