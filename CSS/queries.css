@@ -1,0 +1,75 @@
+@media only screen and (max-width: 600px){
+    header h1{
+        text-align: center;
+        width: 100%;
+        
+    }
+    header{
+        font-size: 90%;
+        height: 120px;
+        position: relative;
+    }
+    #navButtons{
+        float: none;
+        text-align: center;
+        position: relative;
+        top: -15px;
+    }
+    .navButton{
+        margin: 5px 10px;
+    }
+    .colTitle{
+        font-size: 140% !important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .video-overlay{
+        display: none;
+    }
+    
+    .navButton:first-child{
+        display: none;
+    }
+    
+    .inner-container{
+        background-image: url(../background.jpg);
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+    
+    video{
+        display: none;
+    }
+    
+    #searchForm{
+        margin-top: 30px;
+    }
+    
+    .goButton button{
+        width: 50%;
+    }  
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .overlayTitle{
+        font-size: 170% !important;
+    }
+    
+    .video-overlay{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 310px){
+    .inner-container{
+        display: none;
+    }
+    
+    header{
+        height: 180px !important;
+        position: relative;
+    }
+}

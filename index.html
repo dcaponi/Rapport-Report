@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- Latest compiled and minified CSS (BOOTSTRAP)-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript (BOOTSTRAP)-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+<!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        
+<!-- CSS Stylings -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/queries.css">
+        
+<!-- Non-Bootstrap Icons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <script src="JS/vendor/modernizr-2.8.3.min.js"></script>
+   
+    <title>Rapport Report</title>
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>Rapport Report</h1>
+            <div id="navButtons">
+                <button type="button" class="navButton" id="about">How it Works</button>
+                <button type="button" class="navButton" id="goTo">Go to App</button>
+                <button type="button" class="navButton" id="abt">About Us</button>
+            </div>
+            <p class="clearfix"></p>
+        </header>
+        
+        <div id="welcome">
+            <div class="outer-container">
+                <div class="inner-container">
+                    <div class="video-overlay">
+                        <h3 class="overlayTitle">Powerful Networking Info - Fast</h3>
+                        <br>
+                        <p>Need common ground before reaching out to that hiring manager or potential customer? Rapport Report is a great starting point for employer or market research and social media presence feedback. Powered by Klout.com and Twitter, this free app will let you see how strong anyone's social media presence is and what their major influences are. Get started by searching a Twitter user name now!</p>
+                    </div>
+                    <div class="media">
+                        <video id="player" src="welcome.mp4" autoplay loop></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="aboutSection">
+            <h2>How Rapport Report Works</h2>
+            <div class="row">
+                <div class="col-sm-4 aboutCol">
+                    <h4 class="colTitle">What's a Klout Score</h4>
+                    <h3 class="iconLarge"><i class="fa fa-bar-chart" aria-hidden="true"></i></h3>
+                    <ul class="colList">
+                        <li><a href="https://klout.com/corp/score">Klout Score</a> is an overall index of your social media presence</li>
+                        <li>Klout Scores of 75 or above are considered very strong (e.g. @BarackObama has a 98 Klout Score)</li>
+                        <li>Klout Scores are generally higher for users active in multiple social media outlets, and who have many followers and shared content</li>
+                        <li>To find this data, simply Enter a Twitter handle such as @darthVader or darthVader</li>
+                        <li>For more information on Klout Scores, check out <a href="www.klout.com">Klout.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 aboutCol">
+                    <h4 class="colTitle">Learn About Your Network</h4>
+                    <h3 class="iconLarge"><i class="ion-network"></i></h3>
+                    <ul class="colList">
+                        <li>Get a full report containing:</li>
+                        <li class="subList">Klout Score</li>
+                        <li class="subList">Klout Score Trends</li>
+                        <li class="subList">Major Influences and Influencees</li>
+                        <li class="subList">Frequently Mentioned Topics</li>
+                        <li>Receive a snapshot of the most important information for easy access</li>
+                        
+                        <li>See how your social media presence compares to others</li>
+                        <li>Take your employer or lead research to the next level and find out which topics and connections mean the most to them</li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-4 aboutCol">
+                    <h4 class="colTitle">Leverage Your Results</h4>
+                    <h3 class="iconLarge"><i class="fa fa-bullseye" aria-hidden="true"></i></h3>
+                    <ul class="colList">
+                        <li>Find common ground with potential clients or employers before reaching out</li>
+                        <li>Find out how powerful your frineds' influences are</li>
+                        <li>Tailor your employer or lead research around the topics or influences that matter most</li>
+                        <li>Track your own Klout Score to measure your campaign's effectiveness</li>
+                        <li>Check up on influences/influencees to identify trends</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="searchSection">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h3>Get Started Now</h3>
+                    <p>Get a jump on your lead or company research with one click. Find top topics to connect over without crawling through hours of old posts and shares. Find out how much influence a person has on social media with only a Twitter handle.</p>
+                </div>
+                <div class="col-sm-7 searchBar">
+                    <form id="searchForm">
+                        
+                        <input type="text" name="searchInput" id="searchInput" placeholder="@exampleSearch">
+                        <button type="submit" id="searchButton" class="goButton">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section id="appSection">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="col-sm-12 userInfo">
+                        <img src="headshotTest.jpg" id="avatar">
+                        <p>Ezio Auditore</p>
+                        <p>@ezioAuditore</p>
+                    </div>
+                    <div class="col-sm-12 userTopInfo">
+                        <h3>Klout Score: <span id="bigScore">85</span></h3>
+                        <h4>Frequent Topic: <span id="bigTopic">Assasinating</span></h4>
+                        <h4>Top Influence: <span id="bigFollow">Leonardo DaVinci</span></h4>
+                    </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Klout Score</th>
+                                            <th>Day Change</th>
+                                            <th>Week Change</th>
+                                            <th>Month Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="score">85</td>
+                                            <td id="dailyDelta">.02</td>
+                                            <td id="weeklyDelta">.5</td>
+                                            <td id="monthlyDelta">1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Top Topics</th>
+                                            <th>Influencing</th>
+                                            <th>Influences</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="topic1">Assasinating</td>
+                                            <td id="lead1">Shao Jun</td>
+                                            <td id="follow1">Leonardo DaVinci</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="topic2">Parkour</td>
+                                            <td id="lead2">Desmond Miles</td>
+                                            <td id="follow2">Altair LaAhad</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="topic3">Weapons</td>
+                                            <td id="lead3">Edward Kenway</td>
+                                            <td id="follow3">Abstergo</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="topic4">Assassins</td>
+                                            <td id="lead4">Connor</td>
+                                            <td id="follow4">Michaelangelo</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="topic5">Pasta</td>
+                                            <td id="lead5">Faith Connors</td>
+                                            <td id="follow5">Fierenze</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        
+        
+        <script src="JS/app.js"></script>
+    </body>
+</html>
