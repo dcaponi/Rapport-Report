@@ -124,13 +124,13 @@ $(document).ready(function(){
         else {
             $('#dailyDelta').addClass("downDelta");
         }
-        if (Math.round(scores.scoreDelta.weekChange * 1000) / 100 >= 0){
+        if (Math.round(scores.scoreDelta.weekChange * 1000) / 100 > 0){
             $('#weeklyDelta').addClass("upDelta");
         }
         else {
             $('#weeklyDelta').addClass("downDelta");
         }
-        if (Math.round(scores.scoreDelta.monthChange * 1000) / 100 >= 0){
+        if (Math.round(scores.scoreDelta.monthChange * 1000) / 100 > 0){
             $('#monthlyDelta').addClass("upDelta");
         }
         else {
