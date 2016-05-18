@@ -25,7 +25,7 @@
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
-    <script src="JS/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="JS/modernizr-2.8.3.min.js"></script>
    
     <title>Rapport Report</title>
     </head>
@@ -38,8 +38,8 @@
             <h1>Rapport Report</h1>
             <div id="navButtons">
                 <button type="button" class="navButton" id="works">How it Works</button>
-                <button type="button" class="navButton" id="goTo">Go to App</button>
-                <button type="button" class="navButton" id="abt">About Us</button>
+                <button type="button" class="navButton" id="goTo">App</button>
+                <button type="button" class="navButton" id="abt">About</button>
             </div>
             <p class="clearfix"></p>
         </header>
@@ -63,10 +63,10 @@
             <div class="row">
                 <div class="col-sm-4 aboutCol">
                     <h4 class="colTitle">What's a Klout Score</h4>
-                    <h3 class="iconLarge"><i class="fa fa-bar-chart" aria-hidden="true"></i></h3>
+                    <h3 class="iconLarge"><img src="smallLogo.png" class="imageIcon"></h3>
                     <ul class="colList">
                         <li><a href="https://klout.com/corp/score">Klout Score</a> is an overall index of your social media presence</li>
-                        <li>Klout Scores of 75 or above are considered very strong (e.g. @BarackObama has a 98 Klout Score)</li>
+                        <li>Klout Scores of around 40 are considered average while scores above 65 are in the top 5% of users</li>
                         <li>Klout Scores are generally higher for users active in multiple social media outlets, and who have many followers and shared content</li>
                         <li>To find this data, simply Enter a Twitter handle such as @darthVader or darthVader</li>
                         <li>For more information on Klout Scores, check out <a href="www.klout.com">Klout.com</a></li>
@@ -123,33 +123,33 @@
                 <div class="col-sm-4">
                     <div class="col-sm-12 userInfo">
                         <img src="headshotTest.jpg" id="avatar">
-                        <p id="name">Ezio Auditore</p>
-                        <p id="userName">@ezioAuditore</p>
+                        <p id="name"></p>
+                        <p id="userName"></p>
                     </div>
                     <div class="col-sm-12 userTopInfo">
-                        <h3><img src="klout-logo-color-dark.png" class="kloutImg1">&emsp;<span id="bigScore">85</span></h3>
-                        <h4>Frequent Topic: <span id="bigTopic">Assasinating</span></h4>
-                        <h4>Top Influence: <span id="bigFollow">Leonardo DaVinci</span></h4>
+                        <h4><img src="klout-logo-color-dark.png" class="kloutImg1">&emsp;<span id="bigScore"></span></h4>
+                        <h4>Frequent Topic: <span id="bigTopic"></span></h4>
+                        <h4>Top Influence: <span id="bigFollow"></span></h4>
                     </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" style="padding-top:40px;">
                         <div class="row">
                             <div class="col-sm-12">
-                                <table class="table table-condensed">
+                                <table class="table table-condensed scoreTable">
                                     <thead>
                                         <tr>
                                             <th>Klout Score</th>
-                                            <th>Day Change</th>
-                                            <th>Week Change</th>
-                                            <th>Month Change</th>
+                                            <th>Daily &Delta;</th>
+                                            <th>Week  &Delta;</th>
+                                            <th>Month  &Delta;</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td id="score">85</td>
-                                            <td id="dailyDelta">.02</td>
-                                            <td id="weeklyDelta">.5</td>
-                                            <td id="monthlyDelta">1</td>
+                                            <td id="score" class="scoreTable"></td>
+                                            <td id="dailyDelta" class="scoreTable"></td>
+                                            <td id="weeklyDelta" class="scoreTable"></td>
+                                            <td id="monthlyDelta" class="scoreTable"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -157,6 +157,7 @@
                         </div>
                         <hr>
                         <div class="row">
+                            <br><br>
                             <div class="col-sm-12">
                                 <table class="table table-condensed">
                                     <thead>
@@ -168,29 +169,29 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td id="topic1">Assasinating</td>
-                                            <td id="lead1">Shao Jun</td>
-                                            <td id="follow1">Leonardo DaVinci</td>
+                                            <td id="topic1"></td>
+                                            <td id="lead1"></td>
+                                            <td id="follow1"></td>
                                         </tr>
                                         <tr>
-                                            <td id="topic2">Parkour</td>
-                                            <td id="lead2">Desmond Miles</td>
-                                            <td id="follow2">Altair LaAhad</td>
+                                            <td id="topic2"></td>
+                                            <td id="lead2"></td>
+                                            <td id="follow2"></td>
                                         </tr>
                                         <tr>
-                                            <td id="topic3">Weapons</td>
-                                            <td id="lead3">Edward Kenway</td>
-                                            <td id="follow3">Abstergo</td>
+                                            <td id="topic3"></td>
+                                            <td id="lead3"></td>
+                                            <td id="follow3"></td>
                                         </tr>
                                         <tr>
-                                            <td id="topic4">Assassins</td>
-                                            <td id="lead4">Connor</td>
-                                            <td id="follow4">Michaelangelo</td>
+                                            <td id="topic4"></td>
+                                            <td id="lead4"></td>
+                                            <td id="follow4"></td>
                                         </tr>
                                         <tr>
-                                            <td id="topic5">Pasta</td>
-                                            <td id="lead5">Faith Connors</td>
-                                            <td id="follow5">Fierenze</td>
+                                            <td id="topic5"></td>
+                                            <td id="lead5"></td>
+                                            <td id="follow5"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -200,7 +201,7 @@
             </div>
         </section>
         <br>
-        <footer>
+        <footer id="aboutUs">
             <ul>
                 <li><a href="www.dominick-caponi.com" style="color: #fff;"> Engineered by Dominick Caponi</a></li>
                 <li><a href="www.klout.com"><img src="powered-by-klout.png" class="kloutImg"></a></li>

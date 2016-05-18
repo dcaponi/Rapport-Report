@@ -213,22 +213,59 @@ video {
     left: -20px;
 }
 
+.imageIcon{
+    height: 70px;
+    position: relative;
+    bottom: 10px;
+}
+
 /* End 3 Column Layout */
 
 /* Data Section */
 
 #avatar{
-    height: 100%;
-    width: 70%;
+    height: 65%;
+    width: 50%;
 }
 
 .userInfo{
     text-align: center;
     padding: 10px 0px;
+    font-size: 150%;
 }
 
-.userTopInfo{
+.userTopInfo h4{
     padding-bottom: 10px;
+    font-size: 170% !important;
+}
+
+.scoreTable{
+    font-weight: 700;
+    text-align: left;;
+}
+
+.downDelta{
+    color: #ff0000;
+}
+.upDelta{
+    color: #319f00;
+}
+
+.medDelta{
+    color: #f0a600;
+}
+
+
+#bigScore, #bigTopic, #bigFollow{
+    font-weight: 700;
+}
+
+#bigScore{
+    font-size: 150%;
+}
+
+table{
+    font-size: 120%;
 }
 
 /* End Data Section */
@@ -295,8 +332,10 @@ footer ul li{
 }
 
 .kloutImg1{
-    width: 140px;
+    width: 130px;
     height: 30px;
+    position: relative;
+    bottom: 5px;
 }
 /* ==========================================================================
    Helper classes

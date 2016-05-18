@@ -61,8 +61,6 @@
     .goButton button{
         width: 50%;
     }  
-    
-
 }
 
 @media only screen and (max-width: 1000px) {
@@ -84,5 +82,14 @@
     header{
         height: 180px !important;
         position: relative;
+    }
+    
+
+}
+
+@media only screen and (max-width: 350px){
+        table{
+        font-size: 70%;
+        font-weight: 700;
     }
 }
