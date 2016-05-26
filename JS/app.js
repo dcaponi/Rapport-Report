@@ -98,7 +98,13 @@ var masterTopics=null;
         });
         
         $.ajax({
-            data: {screen_name : params.screenName, oauth_consumer_key: "dT611kgDSRQ7hXo9g7fDeNq95"},
+            data: {
+                screen_name : params.screenName, 
+                "consumerKey": "dT611kgDSRQ7hXo9g7fDeNq95",
+                "consumerSecret": "8yLzLZxIVpZpJ702INAgCeoAqMdmVSYTDe4PvQgwtgBz0gLTqE",
+                "accessToken": "423947684-dU3K6MJ3yRaRPqbORhttdcdY1VVCfPJifzUiD6hC",
+                "accessTokenSecret": "kwQWLiPeaxsKXXssI6Ef4cttd8JjFvaaQPLv12d4JBEQD"
+            },
             url: "https://api.twitter.com/1.1/users/show.json",
             dataType: "json",
             type: "GET",
