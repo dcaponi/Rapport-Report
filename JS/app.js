@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+var masterTopics=null;
 //Make the logo and header disappear when user scrolls down
     $(window).scroll(function() {
         if($(window).width() > 585){
@@ -87,7 +87,7 @@ $(document).ready(function(){
                                     dataType: "jsonp",
                                     type: "GET",
                                     success: function(influences){
-                                        writeInfluences(influences);
+                                    writeInfluences(influences);
                                     }
                                 });
                             }
@@ -96,45 +96,60 @@ $(document).ready(function(){
                 });
             },
         });
+        
+        $.ajax({
+            data: {screen_name : params.screenName, key: "dT611kgDSRQ7hXo9g7fDeNq95"},
+            url: "https://api.twitter.com/1.1/users/show.json",
+            dataType: "json",
+            type: "GET",
+            success: function(twitterResults){
+                console.log(twitterResults);
+            }
+        });
     }
     
     function writeScores(scores){
-        var kloutScore = Math.round(scores.score * 100) / 100;
+        var kloutScore = Math.round(scores.score * 100) / 100
+        console.log(kloutScore);
+        console.log(kloutScore >= 65);
+        console.log(kloutScore >= 36 && kloutScore < 65);
+        console.log(kloutScore < 36);
         $('#bigScore').text(kloutScore);
-        $('#score').text(kloutScore);
+        $('#score').text(Math.round(scores.score * 100) / 100);
+        
         if (kloutScore >= 65){
-            $('#bigScore').addClass("upDelta");
-            $('#score').addClass("upDelta");
+            $('#bigScore').addClass("upDelta").removeClass("medDelta").removeClass("downDelta");
+            $('#score').addClass("upDelta").removeClass("medDelta").removeClass("downDelta");
         }
-        else if (kloutScore > 40 && kloutScore < 65){
-            $('#bigScore').addClass("medDelta");
-            $('#score').addClass("medDelta");
+        else if (kloutScore >= 36 && kloutScore < 65){
+            $('#bigScore').addClass("medDelta").removeClass("upDelta").removeClass("downDelta");
+            $('#score').addClass("medDelta").removeClass("upDelta").removeClass("downDelta");
         }
-        else{
-            $('#bigScore').addClass("downDelta");
-            $('#score').addClass("downDelta");
+        else if (kloutScore < 36){
+            $('#bigScore').addClass("downDelta").removeClass("medDelta").removeClass("upDelta");
+            $('#score').addClass("downDelta").removeClass("medDelta").removeClass("upDelta");
         }
         
         $('#dailyDelta').text(Math.round(scores.scoreDelta.dayChange * 100) / 100);
         $('#weeklyDelta').text(Math.round(scores.scoreDelta.weekChange * 100) / 100);
         $('#monthlyDelta').text(Math.round(scores.scoreDelta.monthChange * 100) / 100);
         if (Math.round(scores.scoreDelta.dayChange * 1000) / 100 >= 0){
-            $('#dailyDelta').addClass("upDelta");
+            $('#dailyDelta').addClass("upDelta").removeClass("downDelta");
         }
         else {
-            $('#dailyDelta').addClass("downDelta");
+            $('#dailyDelta').addClass("downDelta").removeClass("upDelta");
         }
         if (Math.round(scores.scoreDelta.weekChange * 1000) / 100 > 0){
-            $('#weeklyDelta').addClass("upDelta");
+            $('#weeklyDelta').addClass("upDelta").removeClass("downDelta");
         }
         else {
-            $('#weeklyDelta').addClass("downDelta");
+            $('#weeklyDelta').addClass("downDelta").removeClass("upDelta");
         }
         if (Math.round(scores.scoreDelta.monthChange * 1000) / 100 > 0){
-            $('#monthlyDelta').addClass("upDelta");
+            $('#monthlyDelta').addClass("upDelta").removeClass("downDelta");
         }
         else {
-            $('#monthlyDelta').addClass("downDelta");
+            $('#monthlyDelta').addClass("downDelta").removeClass("upDelta");
         }
     }
     function writeTopics(topics){
@@ -142,6 +157,7 @@ $(document).ready(function(){
             $('#topic'+(i+1)).text(topics[i].displayName);
         }
         $('#bigTopic').text(topics[0].displayName);
+        masterTopics = topics;
     }
     function writeInfluences(influences){
         for (var i = 0; i < influences.myInfluencees.length; i++){
