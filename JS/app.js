@@ -98,7 +98,7 @@ var masterTopics=null;
         });
         
         $.ajax({
-            data: {screen_name : params.screenName, key: "dT611kgDSRQ7hXo9g7fDeNq95"},
+            data: {screen_name : params.screenName, oauth_consumer_key: "dT611kgDSRQ7hXo9g7fDeNq95"},
             url: "https://api.twitter.com/1.1/users/show.json",
             dataType: "json",
             type: "GET",
