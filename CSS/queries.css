@@ -39,6 +39,13 @@
         margin-top: 20px;;
     }
     
+    .userTopInfo{
+        position: relative;
+        top: 0px;
+        font-size: 80%;
+        text-align: center;
+    }
+    
     .navButton:first-child{
         display: none;
     }

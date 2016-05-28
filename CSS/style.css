@@ -223,15 +223,16 @@ video {
 
 /* Data Section */
 
-#avatar{
-    height: 65%;
-    width: 50%;
+.userTopInfo{
+    position: relative;
+    top: 90px;
+    padding-left: 30px;
 }
 
-.userInfo{
-    text-align: center;
+#userName{
     padding: 10px 0px;
-    font-size: 150%;
+    font-size: 170%;
+    font-weight: 700;
 }
 
 .userTopInfo h4{
